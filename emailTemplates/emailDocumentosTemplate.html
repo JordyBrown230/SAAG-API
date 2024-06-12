@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .vencido {
+            background-color: #c28484;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>A continuación se listan los documentos, licencias o cursos próximos a vencer</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Colaborador</th>
+                <th>Tipo</th>
+                <th>Nombre</th>
+                <th>Fecha de Vencimiento</th>
+                <th>Vence en</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each documentos}}
+                <tr>
+                    {{#ifVencido this.venceEn}}
+                        <td class="vencido">{{this.idDocumento}}</td>
+                        <td class="vencido">{{this.colaborador}}</td>
+                        <td class="vencido">{{this.tipo}}</td>
+                        <td class="vencido">{{this.nombre}}</td>
+                        <td class="vencido">{{this.fechaVencimiento}}</td>
+                        <td class="vencido">{{this.venceEn}}</td>
+                    {{else}}
+                        <td>{{this.idDocumento}}</td>
+                        <td>{{this.colaborador}}</td>
+                        <td>{{this.tipo}}</td>
+                        <td>{{this.nombre}}</td>
+                        <td>{{this.fechaVencimiento}}</td>
+                        <td>{{this.venceEn}}</td>
+                    {{/ifVencido}}
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <p>Este es un reporte generado de manera automática por el sistema</p>
+</body>
+</html>
+

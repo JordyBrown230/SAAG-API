@@ -1,0 +1,44 @@
+<mensajes>
+    <mensaje tipo="cumpleanos">
+        <asunto>¡Feliz Cumpleaños!</asunto>
+        <contenido>
+            <![CDATA[
+                <div style="width: 600px; height: 800px; background-image: url('https://i.pinimg.com/564x/f4/af/88/f4af8848b315b9a69990e6bf51f148c1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; color: #001F3F; text-align: center;">
+                    <div style="margin: 0 auto; max-width: 80%;">
+                        <div style="padding-top: 170px;">
+                            <h2 style="font: oblique bold 120% cursive; color: black; font-size: 30px;">¡Feliz Cumpleaños, {nombre}!</h2>
+                        </div>
+                        <div style="padding: 5px; font-size: 20px;">
+                            <p>Como parte de ACIB, queremos desearte un día lleno de alegría y felicidad en tu cumpleaños.</p>
+                        </div>
+                        <div style="padding: 5px; font-size: 18px;">
+                            <p>Que el Señor te bendiga y te guarde; que el Señor haga resplandecer su rostro sobre ti y tenga de ti misericordia; que el Señor alce sobre ti su rostro y ponga en ti paz." - Números 6:24-26</p>
+                        </div>
+                        <div style="padding: 5px; font-size: 14px;">
+                            <p>¡Que todos tus deseos se hagan realidad!</p>
+                        </div>
+                    </div>
+                </div>
+            ]]>
+        </contenido>
+    </mensaje>
+    <mensaje tipo="otro">
+        <asunto>invitacion</asunto>
+        <contenido>
+            <![CDATA[
+                <div style="background-image: url('https://i.pinimg.com/564x/20/c0/dc/20c0dc691b73663021e7c6642abad5bc.jpg'); background-size: cover; color: #001F3F; width: 480px; height: 800px; text-align: center;">
+                    <div style="margin: 0 auto; max-width: 80%; padding-top: 145px;">
+                        <h2 style="font: oblique bold 120% cursive; font-size: 40px;">¡{nombre}, Comparte los Festejos!</h2>
+                        <p>En ACIB, queremos que disfrutes de un día lleno de alegría y felicidad junto a tus compañeros.</p>
+                        <h2>¡Celebremos juntos!</h2>
+                        <p>Hoy es un día especial, celebramos el cumpleaños de algunos de nuestros colaboradores. ¡Te invitamos a unirte a nosotros en esta celebración!</p>
+                        <ul style="list-style-type: none; padding: 0;">
+                            {cumpleanieros}
+                        </ul>
+                    </div>
+                </div>
+            ]]>
+        </contenido>
+    </mensaje>
+</mensajes>
+
